@@ -13,20 +13,20 @@ public class DateId {
 	static {
 		GregorianCalendar today = new GregorianCalendar();
 		int y = today.get(YEAR);
-		int y = today.get(MONTH) + 1;
-		int y = today.get(DATE);
+		int m = today.get(MONTH) + 1;
+		int d = today.get(DATE);
 
 		System.out.printf("오늘은 %04d년 %02d월 %02d일 입니다.\n", y, m, d);
 
 		counter = y + 1000000 + m * 10000 + d + 100;
 	}
 
-	public DateId(int id) {
+	public DateId() {
 		id = ++counter;
 	}
 
 	public int getId() {
-		this.id = id;
+		return id;
 	}
 
 }
