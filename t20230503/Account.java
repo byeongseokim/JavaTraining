@@ -30,6 +30,10 @@ public class Account {
 		this.openDay = new Day(day);
 	}
 
+	public Account(String string, int i, int j) {
+		// TODO Auto-generated constructor stub
+	}
+
 	// 계좌 명의 확인
 	public String getName() {
 		return name;
@@ -56,7 +60,7 @@ public class Account {
 	}
 
 	// k원 입금
-	void deposit(long k) {
+	protected void deposit(long k) {
 		balance += k;
 	}
 
