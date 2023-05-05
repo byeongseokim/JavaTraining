@@ -4,12 +4,9 @@ import t20230503.Account;
 
 class TimeAccount extends Account {
 	private long timeBalance;
-	private long balance;
-
-	
 	
 	public TimeAccount(String name, String no, long balance, long timeBalance) {
-		super(name, no);
+		super(name, no, balance, null);
 		this.timeBalance = timeBalance;
 	}
 	

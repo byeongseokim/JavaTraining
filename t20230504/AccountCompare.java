@@ -28,10 +28,10 @@ public class AccountCompare {
 			System.out.println("둘의 예금 잔액은 같습니다.");
 			break;
 		case 1:
-			System.out.println("길동이의 예금 잔액이 만흡니다.");
+			System.out.println("길동이의 예금 잔액이 많습니다.");
 			break;
 		case -1:
-			System.out.println("철수의 예금 잔액이 만흡니다..");
+			System.out.println("철수의 예금 잔액이 많습니다..");
 			break;
 
 		}
