@@ -1,7 +1,7 @@
 package t20230510;
 
-import java.time.Year;
 import java.util.GregorianCalendar;
+import static java.util.GregorianCalendar.*;
 
 public class Calendar {
 	static int[] mday = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
@@ -49,8 +49,8 @@ public class Calendar {
 		int year = 1, month = 1;
 		if (args.length == 0) {
 			GregorianCalendar today = new GregorianCalendar();
-			year = today.get(year);
-			month = today.get(month) + 1;
+			year = today.get(YEAR);
+			month = today.get(MONTH) + 1;
 		} else {
 			if (args.length >= 1) {
 				year = Integer.parseInt(args[0]);
